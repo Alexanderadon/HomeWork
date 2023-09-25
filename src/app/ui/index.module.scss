@@ -1,0 +1,164 @@
+@import "../../../node_modules/compass-mixins/lib/compass";
+@import "../styles/vars.scss";
+@import "../styles//mixins.scss";
+@import "../styles//global.scss";
+
+
+.main {
+  padding: 0 12rem;
+
+  width: 100%;
+  height: calc(100vh - 16rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint($laptop) {
+    padding: 0rem 8rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0rem 4rem;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0rem 2rem;
+  }
+
+
+}
+
+.main__conteiner {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+
+.main__conteiner_title {
+  font-size: 7.2rem;
+  font-weight: 400;
+
+  font-family: "IBM Plex Mono", monospace;
+
+  width: 11ch;
+  animation: typing 1.6s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+
+  @include breakpoint($laptop) {
+    font-size: 6.2rem;
+
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 5.2rem;
+
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 4.2rem;
+
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+// animate compass
+@function multiple-box-shadow($n) {
+  $value: "#{random(200)}rem #{random(200)}rem #FFF";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(200)}rem #{random(200)}rem #FFF";
+  }
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  background-repeat: no-repeat;
+
+  box-shadow: $shadows-small;
+  animation: animStar 70s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0rem;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    background-repeat: no-repeat;
+
+    box-shadow: $shadows-small;
+  }
+}
+
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  background-repeat: no-repeat;
+
+  box-shadow: $shadows-medium;
+  animation: animStar 120s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0rem;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    background-repeat: no-repeat;
+
+    box-shadow: $shadows-medium;
+  }
+}
+
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  background-repeat: no-repeat;
+  box-shadow: $shadows-big;
+  animation: animStar 170s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0rem;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    background-repeat: no-repeat;
+
+    box-shadow: $shadows-big;
+  }
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200rem);
+  }
+}

@@ -1,0 +1,44 @@
+.LectureOneContent {
+  padding: 0.8rem;
+
+section,
+h1,
+h2,
+h3 {
+  margin: 2rem 0;
+  color: black ;
+}
+
+.CatPhotoApp {
+  color: black;
+}
+
+p {
+  margin-bottom: 2rem ;
+}
+
+li {
+  list-style: inside;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+ol, ul {
+  margin-bottom: 2rem;
+}
+
+
+fieldset {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  margin-left: .5rem;
+}
+
+}
+
