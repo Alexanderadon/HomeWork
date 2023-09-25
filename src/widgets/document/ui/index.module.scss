@@ -1,0 +1,54 @@
+@import "../../../app/styles/vars.scss";
+@import "../../../app/styles/mixins.scss";
+
+.lection {
+  margin-top: 5rem;
+  padding: 0 12rem;
+
+  @include breakpoint($laptop) {
+    padding: 0rem 8rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0rem 4rem;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0rem 2rem;
+  }
+
+}
+
+.document {
+  overflow: hidden;
+  width: 100%;
+  min-height: 20rem;
+
+  font-size: 2.1rem;
+  font-weight: 400;
+
+  border-radius: 2rem;
+  background-color: $white;
+}
+
+.document__header {
+  padding: 0 2rem ;
+  width: 100%;
+  height: 6rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $blue;
+
+
+  h3 {
+    color: $white;
+  }
+}
+
+// content
+.content {
+  padding: 2rem;
+}
+
