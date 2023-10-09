@@ -1,0 +1,44 @@
+@import "../ui/index.module.scss";
+// 2 component
+
+.quiz {
+  a {
+    width: 100%;
+  }
+}
+
+.quiz_surprice {
+  display: flex;
+  align-items: center;
+}
+
+.quiz__img {
+  margin-bottom: 3rem;
+
+  max-width: 12rem;
+  object-fit: cover;
+
+  display: flex;
+  justify-content: center;
+}
+
+.quiz__btn {
+  cursor: pointer;
+  width: 100%;
+  height: 5rem;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: white;
+
+  background: #93b9fa;
+  border-radius: 2rem;
+  border: none;
+
+  transition: background 0.1s ease-in-out;
+
+  &:hover {
+    background: rgb(79, 129, 216);
+  }
+}
