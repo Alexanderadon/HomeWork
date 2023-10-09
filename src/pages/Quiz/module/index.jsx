@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 
 import surprice from "./img/surprice.png";
 
-export const Result = ({ correct, questions }) => {
+export const Result = ({ correct, questions, onRestart }) => {
   return (
     <>
       <div className={`${styles.quiz} ${styles.quiz_surprice}`}>
@@ -10,10 +10,7 @@ export const Result = ({ correct, questions }) => {
         <h3 className={styles.quiz__title}>
           Вы отгадали {correct} ответов из {questions.length}
         </h3>
-        <button
-          onClick={() => window.location.reload()}
-          className={styles.quiz__btn}
-        >
+        <button onClick={onRestart} className={styles.quiz__btn}>
           Попробовать снова
         </button>
       </div>

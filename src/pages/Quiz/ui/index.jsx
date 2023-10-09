@@ -107,6 +107,12 @@ export const Quiz = () => {
     }
   };
 
+  const handleRestartQuiz = () => {
+    // Сбрасываем состояние
+    setStep(0);
+    setCorrect(0);
+  };
+
   const perc = Math.round((step / questions.length) * 100);
 
   return (
@@ -130,7 +136,7 @@ export const Quiz = () => {
             </ul>
           </div>
         ) : (
-          <Result correct={correct} questions={questions} />
+          <Result correct={correct} questions={questions} onRestart={handleRestartQuiz} />
         )}
       </section>
     </Layout>
