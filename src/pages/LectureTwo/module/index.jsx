@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 export const LectureTwoContent = () => {
   return (
     <div>
-      Пока нет 2 урока разработчик устал, компонент на связи!
+      Проект с Document остновлен, финансирование закончено, переходите на Pets Projects, от 3 линка!
     </div>
   );
 };

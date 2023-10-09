@@ -19,19 +19,26 @@ export const Header = () => {
           <li>
             <Link to={Paths.home}>Main</Link>
           </li>
-          <li onClick={ToggleLectureOpen} className={`${styles.header__nav_li} ${
+          <li
+            onClick={ToggleLectureOpen}
+            className={`${styles.header__nav_li} ${
               isOpen ? styles["openLecture"] : ""
-            }`}>
+            }`}
+          >
             <span>Lecture</span>
             <img
-              className={`${styles.header__img} ${isOpen ? styles["openLectureImg"] : ""}`}
+              className={`${styles.header__img} ${
+                isOpen ? styles["openLectureImg"] : ""
+              }`}
               src={arrow}
               alt="image"
             />
             {isOpen && (
-              <div className={`${styles.header__nav_subnav} ${
-                isOpen ? styles["openLecture"] : ""
-              }`}>
+              <div
+                className={`${styles.header__nav_subnav} ${
+                  isOpen ? styles["openLecture"] : ""
+                }`}
+              >
                 <ul className={styles.subnav}>
                   <li>
                     <Link to={Paths.lectureOne}>Lecture one</Link>
@@ -40,7 +47,7 @@ export const Header = () => {
                     <Link to={Paths.lectureTwo}>Lecture two </Link>
                   </li>
                   <li>
-                    <Link to={Paths.lectureThree}>Lecture three</Link>
+                    <Link to={Paths.quiz}>Quiz 09.10.2023</Link>
                   </li>
                   <li>
                     <Link to={Paths.lectureFour}>Lecture four</Link>
@@ -51,7 +58,6 @@ export const Header = () => {
                   <li>
                     <Link to={Paths.lectureSix}>Lecture six</Link>
                   </li>
-
                 </ul>
               </div>
             )}
