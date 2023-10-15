@@ -1,1 +1,0 @@
-export { GeneratorPage } from "./ui/index";

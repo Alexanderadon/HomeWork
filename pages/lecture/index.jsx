@@ -1,1 +1,0 @@
-export { Lecture } from "./ui/index";
