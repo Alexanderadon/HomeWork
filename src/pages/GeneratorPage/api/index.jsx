@@ -340,7 +340,7 @@ export const imagesArrow = {
     {
       link: "https://dev-to-uploads.s3.amazonaws.com/i/z094e3wehsoe8z6lsxnz.png",
       id: 19,
-      keywords: ["js", "javascript", "map", "filter", "find", "reduce"],
+      keywords: ["scss","less","sass",],
     },
     {
       link: "http://i1.ytimg.com/vi/EzB6Pk66XW8/maxresdefault.jpg",
