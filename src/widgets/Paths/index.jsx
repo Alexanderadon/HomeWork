@@ -3,7 +3,7 @@ export const Paths = {
   lectureOne: "/lectureOne",
   lectureTwo: "/lectureTwo",
   quiz: "/quiz",
-  lectureFour: "/lectureFour",
+  generatorAi: "/generatorAi",
   lectureFive: "/lectureFive",
   lectureSix: "/lectureSix",
 }

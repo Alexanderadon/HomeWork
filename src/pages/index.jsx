@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { LectureOne } from "../pages/LectureOne/index";
 import { LectureTwo } from "./LectureTwo";
 import { Quiz } from "../pages/Quiz/index";
+import { GeneratorPage } from "../pages/GeneratorPage/index";
 import { App } from "../app/App";
 
 export const router = createBrowserRouter([
@@ -21,5 +22,9 @@ export const router = createBrowserRouter([
   {
     path: Paths.quiz,
     element: <Quiz />,
+  },
+  {
+    path: Paths.generatorAi,
+    element: <GeneratorPage />,
   },
 ]);

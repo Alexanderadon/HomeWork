@@ -108,7 +108,7 @@ export const Quiz = () => {
   };
 
   const handleRestartQuiz = () => {
-    // Сбрасываем состояние
+    // Сбрасываем состояниеnm
     setStep(0);
     setCorrect(0);
   };
