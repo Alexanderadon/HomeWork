@@ -50,7 +50,7 @@ export const Header = () => {
                     <Link to={Paths.quiz}>Quiz 09.10.2023</Link>
                   </li>
                   <li>
-                    <Link to={Paths.lectureFour}>Lecture four</Link>
+                    <Link to={Paths.generatorAi}>Generator.AI</Link>
                   </li>
                   <li>
                     <Link to={Paths.lectureFive}>Lecture five</Link>
